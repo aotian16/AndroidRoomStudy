@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qefee.androidroomstudy">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.StudentListActivity"
+            android:label="@string/title_activity_student_list"
+            android:parentActivityName=".activity.StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qefee.androidroomstudy.activity.StudentActivity" />
+        </activity>
+        <activity
+            android:name=".activity.InsertStudentActivity"
+            android:label="@string/title_activity_insert_student"
+            android:parentActivityName=".activity.StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qefee.androidroomstudy.activity.StudentActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UpdateStudentActivity"
+            android:label="@string/title_activity_update_student"
+            android:parentActivityName=".activity.StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qefee.androidroomstudy.activity.StudentActivity" />
+        </activity>
+        <activity
+            android:name=".activity.FindStudentByNameActivity"
+            android:label="@string/title_activity_find_student_by_name"
+            android:parentActivityName=".activity.StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qefee.androidroomstudy.activity.StudentActivity" />
+        </activity>
+        <activity
+            android:name=".activity.StudentActivity"
+            android:label="@string/title_activity_student"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qefee.androidroomstudy.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
